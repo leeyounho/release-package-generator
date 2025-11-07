@@ -28,7 +28,9 @@ jobs:
         
       # Runs a single command using the runners shell
       - name: Run gradle
-        run: gradle build
+        run: |
+          cd tbl-build
+          gradle build
 
       - name: debug1
         run: ls -al
