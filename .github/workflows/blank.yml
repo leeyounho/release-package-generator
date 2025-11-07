@@ -22,13 +22,16 @@ jobs:
         with:
           repository: leeyounho/tbl-build
 
-      - name: debug
+      - name: debug1
         run: ls -al
         
       # Runs a single command using the runners shell
       - name: Run gradle
         run: gradle build
 
+      - name: debug1
+        run: ls -al
+        
       # Runs a set of commands using the runners shell
       - name: Upload artifact
         uses: actions/upload-artifact@v4
